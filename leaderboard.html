@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153119114-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-153119114-2');
+		</script>
+
+        <title>CommonGen | USC/ISI </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="CommonGen">
+        <meta charset="UTF-8">
+
+        <!-- CSS Bootstrap & Custom -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+		<link href="css/animate.css" rel="stylesheet" media="screen">
+		
+		<meta property="og:site_name" content="FLUTE | Columbia CS">
+		<meta property="og:title" content="FLUTE | Figurative Language Understanding through Textual Explanations">
+		<meta name=description content="Authors: Tuhin Chakrabarty, Arkadiy Saakyan, Debanjan Ghosh, Smaranda Muresan">
+		<meta name=keywords content="FLUTE, Chakrabarty, Tuhin, Natural Language Processing, Computational Linguistics, NLP, ML,Commonsense, Figurative Language">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script language="javascript">
+				var ie4 = false; if(document.all) { ie4 = true; }
+			function getObject(id) { if (ie4) { return document.all[id]; } else { return document.getElementById(id); } }
+			function toggle(link, divId) { var lText = link.innerHTML; var d = getObject(divId);
+			 if (lText == '[show more]') { link.innerHTML = '[hide more]'; d.style.display = 'block'; }
+			 else { link.innerHTML = '[show more]'; d.style.display = 'none'; } }
+			   </script>
+<script>
+$(document).ready(function () {
+$('#dtBasicExample').DataTable();
+$('.dataTables_length').addClass('bs-select');
+});
+</script>
+
+<!-- <link href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css" rel="stylesheet"> -->
+
+<!-- <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script> -->
+
+		<!-- <link rel="stylesheet" id="usc-homepage-2017-style-css" href="https://www.usc.edu/wp-content/themes/usc-homepage-2017/assets/css/usc-homepage-2017.css?ver=4.1.0" type="text/css" media="screen,print"> -->
+		<link href="style.css" rel="stylesheet" media="screen">
+		<!-- MDBootstrap Datatables  -->
+		<link href="css/addons/datatables.min.css" rel="stylesheet">
+		<!-- MDBootstrap Datatables  -->
+		<script type="text/javascript" src="js/addons/datatables.min.js"></script>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+    
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/min/modernizr.min.js"></script>
+        <!--[if lt IE 8]>
+	    <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+        </div>
+		<![endif]-->
+		<link href="js/bootstrap-table.min.css" rel="stylesheet">
+
+<script src="js/bootstrap-table.min.js"></script>
+
+
+    </head>
+    <body>
+	
+	
+		<div class="responsive-menu visible-sm visible-xs">
+			<a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+			<div class="menu-open">
+				<nav>
+						<ul class="sf-menu">
+								<li ><a href="index.html">Introduction</a></li> 
+								<li ><a href="task.html" target="_blank">Task and Evaluation</a></li>
+								<li ><a href="leaderboard.html">Leaderboard</a></li>
+								<li ><a href="analysis.html">Analysis</a></li>
+							</ul>
+				</nav> 
+			</div> <!-- /.menu-open -->
+		</div> <!-- /.responsive-menu -->
+
+		<header class="site-header">
+			
+<style type="text/css">
+
+	.performanceTable {
+	  margin: 10px 0px;
+	  font-size: 1.2em;
+	}
+	.performanceTable .institution {
+	   margin: 0px 0px 0px 0px;
+	  font-style: italic;
+	  font-weight: 500 !important;
+	  font-family: 'Roboto', sans-serif, Arial;
+	}
+	.performanceTable .date {
+	  font-weight: normal;
+	  font-size: 1.1em;
+	  margin: 0px 0px 10px 0px;
+	}
+	.performanceTable .footnote {
+	  font-weight: normal;
+	  font-size: 0.9em;
+	  margin: 0 0 0 0;
+	}
+	.performanceTable .model {
+	  font-weight: bold;
+	  color:black;
+	  font-size: 1.1em;
+	  margin: 10px 0px 0px 0px;
+	}
+	.performanceTable tr.human-row {
+	  background: #f5f5f5;
+	}
+	.performanceTable td {
+	  text-align: center; 
+	  max-width: 250px;	
+	  vertical-align: middle;
+	  font-size: 1em;
+	}
+	.performanceTable th {
+	  text-align: center;
+	  max-width: 250px;
+	}
+	
+	p {
+	  font-size: 1.1em;
+	  font-weight: 400;
+	}
+	</style>
+			
+			<div class="container">
+				<div class="main-header">
+					<div class="row">
+					<div class="col-md-6 col-sm-6" id="top">
+							<h1 style="color: white"><b>FLUTE</b></em></h1>
+							<span style="color:#FFFF00; font-size: 14pt; font-family: Roboto, Helvetica, Arial, Heveltica Neue, sans-serif"> Figurative Language Understanding through Textual Explanations</span> <br>
+
+							<span style="color:aliceblue; font-size: 12pt; font-family: Roboto, Helvetica, Arial, Heveltica Neue, sans-serif">
+								<br> <a target="_blank" href="https://tuhinjubcse.github.io/">Tuhin Chakrabarty</a>, <a target="_blank" href="https://asaakyan.github.io/">Arkadiy Saakyan</a>, <a target="_blank" href="https://scholar.google.com/citations?user=Sc_vp7gAAAAJ&hl=en">Debanjan Ghosh</a>, <a target="_blank" href="http://www.cs.columbia.edu/~smara/">Smaranda Muresan</a><br>
+							</span>
+							<br>
+						</div> 
+						<div class="col-md-6 main-header-right">
+							<img width="120" height="120" src="images/flute.png" alt="FLUTE">
+							<img width="120" height="120" src="images/cucs_logo.png" alt="Columbia CS">
+						</div>
+					</div> <!-- /.row -->
+				</div> <!-- /.main-header -->
+			</div> <!-- /.container -->
+			<div class="menu-wrapper visible-md visible-lg">
+				<div class="container">
+					<div class="inner-menu">
+						<div class="row">
+							<div class="col-md-12 main-menu">
+								<nav>
+									<ul class="sf-menu"> 
+								<li ><a href="index.html">Introduction</a></li> 
+								<li ><a href="task.html" target="_blank">Task and Evaluation</a></li>
+								<li ><a href="leaderboard.html">Leaderboard</a></li>
+								<li ><a href="analysis.html">Data and Statistics</a></li>
+										<!-- <li ><a href="#blog">Blogs</a></li>  -->
+										<!-- <li><a href="#contact">Contact</a></li> -->
+									</ul>
+								</nav>
+							</div> <!-- /.main-menu --> 
+						</div> <!-- /.row -->
+					</div> <!-- /.inner-menu -->
+				</div> <!-- /.container -->
+			</div> <!-- /.menu-wrapper -->
+		</header> <!-- /.site-header -->
+
+
+		<div class="container">
+			
+			<div class="top-content">
+				
+ 
+
+			<div class="row">
+					<div class="col-md-12">
+						
+								
+								</div>
+								 
+									</div> <!-- /.col-md-4 -->
+								</div>
+								
+
+								<div class="box-content">
+									<div class="row">
+										<div class="col-md-12" id="exp">
+										<h4 class="widget-title"><span><b><a>FLUTE Leaderboard (v1.0)</a></b></span></h4>
+										
+										<table class="table performanceTable">
+											<tbody>
+											<tr><th><p>Rank</p></th><th><p>Model</p></th><th><p>Acc@0</p></th> 
+											<th><p>Acc@50</p></th><th><p style="color: black">Acc@60</p></th></tr>
+											 <tr style="background-color: lightgray;">
+												<td> <p class="rank"> &nbsp;</p><span class="date badge badge-secondary"></span></td>
+												<td style="word-break:break-word;"><p class="model">T5-3B (resource-rich baseline)</p> 
+												</td>
+												<td><u>76.72</u></td>
+												<td><u>69.05</u></td> 
+												<td><u>44.27</u></td>
+											  </tr> 
+
+											
+												
+											  <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+											</tbody>
+										  </table>
+										  <p>
+										</div>
+										
+										<p><span style="color:red"><b>Submit to this leaderboard:</b></span> <span style="color:black">You can submit your prediction by going to <a href="https://codalab.org/">CodaLab</a>.You will have to provide details about your underlying model and the number of parameters. All details on submission file format and a evaluation script will be provided there<br><br>
+										
+										We use <b>Accuracy@60</b> for ranking all methods because it means the explanations are of superior quality.We will also conduct human evaluation of top 5 performing systems. When accounting for <b>top 5</b> sytems we will take into account both systems with <u>good Accuracy measures</u> but also systems that are competitive but <u>typically use smaller models (in terms of number of parameters)</u></span></p>
+
+									</div>
+											
+								</div>
+
+<div class="box-content">
+								<div class="row">
+									<div class="col-md-12" id="misc">
+										<h4 class="widget-title"><span><b>Misc.</b></span></h4>
+		<div style="font-size:15px"> 
+			 <h4><b>Citation</b></h4>
+
+<!-- @article{lin2019comgen, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  author    = {Bill Yuchen Lin and Ming Shen and Wangchunshu Zhou and Pei Zhou and Chandra Bhagavatula and Yejin Choi and Xiang Ren}, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  title     = {CommonGen: A Constrained Text Generation Challenge for Generative Commonsense Reasoning}, <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; journal = {CoRR},<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; volume = {abs/1911.03705},<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;year      = {2019} <br>
+} -->
+
+<pre><code>@article{chakrabarty2022flute,
+      title={FLUTE: Figurative Language Understanding and Textual Explanations},
+      author={Chakrabarty, Tuhin and Saakyan, Arkadiy and Ghosh, Debanjan and Muresan, Smaranda},
+      journal={arXiv preprint arXiv:2205.12404},
+      year={2022}
+    }
+</code></pre>
+		</div>
+
+		
+	</div>
+</div>
+
+</div>
+
+		</div> <!-- /.container -->
+
+
+		 
+		<footer class="site-footer">
+			<div class="main-footer">
+
+				<div class="container"> 
+					<p class="small-text">Copyright 2020 &copy;.  USC INK  Lab 
+								</p> 
+					<div class="copyright">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								
+							</div> <!-- /.col-md-6 -->
+
+						</div> <!-- /.row -->
+					</div> <!-- /.copyright -->
+				</div> <!-- /.container -->
+			</div> <!-- /.main-footer -->
+		</footer> <!-- /.site-footer -->
+
+		<a href="#about" id="top-link" class="fa fa-angle-up"></a>
+	
+        <!-- JavaScripts -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/custom.min.js"></script>
+		
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278218365'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1278218365%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+		
+    </body>
+</html>
